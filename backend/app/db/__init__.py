@@ -1,3 +1,19 @@
-"""Database package placeholder — connections and session management go here later."""
+"""Database package — declarative base, mixins, and async session management."""
 
-__all__ = []
+from app.db.base import Base, TimestampMixin, UUIDMixin
+from app.db.session import (
+    async_session_factory,
+    dispose_engine,
+    engine,
+    get_db,
+)
+
+__all__ = [
+    "Base",
+    "TimestampMixin",
+    "UUIDMixin",
+    "async_session_factory",
+    "dispose_engine",
+    "engine",
+    "get_db",
+]
