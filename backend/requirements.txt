@@ -1,0 +1,5 @@
+# Minimal runtime requirements (Phase 1: no heavy deps)
+# Add concrete dependencies in later phases.
+
+fastapi==0.95.2
+uvicorn==0.22.0

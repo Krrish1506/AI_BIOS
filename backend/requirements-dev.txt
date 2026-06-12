@@ -1,0 +1,4 @@
+# Development requirements (linters, formatters, test tools)
+black==24.1.0
+ruff==0.18.0
+pytest==8.3.3

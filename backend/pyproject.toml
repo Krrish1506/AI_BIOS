@@ -1,0 +1,7 @@
+[tool.poetry]
+name = "ai_bios_backend"
+version = "0.1.0"
+description = "AI-BIOS backend (scaffold)"
+
+[tool.black]
+line-length = 88

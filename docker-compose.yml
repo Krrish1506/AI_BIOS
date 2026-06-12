@@ -1,0 +1,19 @@
+version: "3.8"
+
+# Minimal docker-compose placeholder for Phase 1 scaffold.
+# Services should be defined during later phases.
+services:
+  backend:
+    image: placeholder-backend:latest
+    restart: unless-stopped
+  frontend:
+    image: placeholder-frontend:latest
+    restart: unless-stopped
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: ai_bios
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+  cache:
+    image: redis:7
